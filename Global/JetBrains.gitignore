@@ -8,8 +8,15 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
+# Build process artifacts
+build/
+
 # Generated files
 .idea/**/contentModel.xml
+
+# Sensitive or high-churn project files
+# The module (app) iml file especially contains local file-system package cache info which should not be in source control.
+*.iml
 
 # Sensitive or high-churn files
 .idea/**/dataSources/
@@ -20,7 +27,12 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
+# Debugging logs
+captures/
+
 # Gradle
+.gradle
+local.properties
 .idea/**/gradle.xml
 .idea/**/libraries
 
@@ -39,6 +51,10 @@
 
 # CMake
 cmake-build-*/
+
+# Legacy Native (non-CMake) build artifacts
+**/.cxx
+**/.externalNativeBuild
 
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
@@ -68,4 +84,6 @@ fabric.properties
 .idea/httpRequests
 
 # Android studio 3.1+ serialized cache file
+.idea/caches
 .idea/caches/build_file_checksums.ser
+
